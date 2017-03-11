@@ -55,6 +55,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		102385011E73814200D20A19 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+OCMAdditions.h"; path = "OCMock/NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		102385021E73814200D20A19 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMArg.h; path = OCMock/OCMArg.h; sourceTree = "<group>"; };
+		102385031E73814200D20A19 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMConstraint.h; path = OCMock/OCMConstraint.h; sourceTree = "<group>"; };
+		102385041E73814200D20A19 /* OCMFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMFunctions.h; path = OCMock/OCMFunctions.h; sourceTree = "<group>"; };
+		102385051E73814200D20A19 /* OCMLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMLocation.h; path = OCMock/OCMLocation.h; sourceTree = "<group>"; };
+		102385061E73814200D20A19 /* OCMMacroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMMacroState.h; path = OCMock/OCMMacroState.h; sourceTree = "<group>"; };
+		102385071E73814200D20A19 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMock.h; path = OCMock/OCMock.h; sourceTree = "<group>"; };
+		102385081E73814200D20A19 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMockObject.h; path = OCMock/OCMockObject.h; sourceTree = "<group>"; };
+		102385091E73814200D20A19 /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMRecorder.h; path = OCMock/OCMRecorder.h; sourceTree = "<group>"; };
+		1023850A1E73814200D20A19 /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMStubRecorder.h; path = OCMock/OCMStubRecorder.h; sourceTree = "<group>"; };
 		C77D51C1FA1A477C99FA184A /* libPods-BLELister.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BLELister.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE408929182CCCC700643E77 /* CBCentralManager_BSSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBCentralManager_BSSafe.h; path = Bluetooth/CBCentralManager_BSSafe.h; sourceTree = "<group>"; };
 		DE40892A182CCCC700643E77 /* CBCentralManager_BSSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBCentralManager_BSSafe.m; path = Bluetooth/CBCentralManager_BSSafe.m; sourceTree = "<group>"; };
@@ -132,6 +142,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		102384F21E737FE800D20A19 /* ExternalFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				102385011E73814200D20A19 /* NSNotificationCenter+OCMAdditions.h */,
+				102385021E73814200D20A19 /* OCMArg.h */,
+				102385031E73814200D20A19 /* OCMConstraint.h */,
+				102385041E73814200D20A19 /* OCMFunctions.h */,
+				102385051E73814200D20A19 /* OCMLocation.h */,
+				102385061E73814200D20A19 /* OCMMacroState.h */,
+				102385071E73814200D20A19 /* OCMock.h */,
+				102385081E73814200D20A19 /* OCMockObject.h */,
+				102385091E73814200D20A19 /* OCMRecorder.h */,
+				1023850A1E73814200D20A19 /* OCMStubRecorder.h */,
+			);
+			name = ExternalFrameworks;
+			sourceTree = "<group>";
+		};
 		DE4E2A74180870A7005DA864 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +203,7 @@
 				DEE990CA17F543F70041CAB6 /* BLELister */,
 				DEE990EF17F543F70041CAB6 /* BLEListerTests */,
 				DEE990C317F543F70041CAB6 /* Frameworks */,
+				102384F21E737FE800D20A19 /* ExternalFrameworks */,
 				DEE990C217F543F70041CAB6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -315,6 +343,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Beepscore LLC";
 				TargetAttributes = {
+					DEE990C017F543F70041CAB6 = {
+						DevelopmentTeam = 5U8G94UWTC;
+					};
 					DEE990E717F543F70041CAB6 = {
 						TestTargetID = DEE990C017F543F70041CAB6;
 					};
@@ -523,11 +554,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				DEVELOPMENT_TEAM = 5U8G94UWTC;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BLELister/BLELister-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "BLELister/BLELister-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.beepscore.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NewBistas.BLELister;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -539,11 +571,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				DEVELOPMENT_TEAM = 5U8G94UWTC;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BLELister/BLELister-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "BLELister/BLELister-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.beepscore.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NewBistas.BLELister;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
