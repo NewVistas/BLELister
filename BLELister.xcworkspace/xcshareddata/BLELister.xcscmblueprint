@@ -9,7 +9,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "269988DC-68C0-4F8A-9F41-950F98647AA1",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "E23AC31E8ECBD3EE670484FFE36D07683C9CBD3A" : "BLEListerNVfork\/",
+    "E23AC31E8ECBD3EE670484FFE36D07683C9CBD3A" : "BLELister\/",
     "E4BCE3AE6B24E41B9BCE312FF3B0B6CD0B8B8025" : "BLELister\/ocmock"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "BLELister",
